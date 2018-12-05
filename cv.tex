@@ -1,0 +1,148 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in} 
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Marcin Praski} & Email : marcin.praski@live.com \\
+  https://github.com/mpraski & Mobile : +48 792 639 099 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University College London}{London, UK}
+      {BSc Computer Science}{Sep. 2016 -- Jun. 2019}
+      \resumeItemListStart
+        \resumeItem{Modules}
+          {Logic and Database Theory, Computer Architecture, Concurrency, Compilers, Object-Oriented Programming, Functional Programming, Engineering Mathematics in Finance, Stochastic Calculus and Uncertainty Analysis, Data Mining and Analysis}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Duco}{London, UK}
+      {Software Engineer Intern}{Jul. 2018 - Oct. 2018}
+      \resumeItemListStart
+        \resumeItem{Tensorflow}
+          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models.}
+        \resumeItem{Apache Beam}
+          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Lucena Research}{Atlanta, GA}
+      {Data Scientist}{Summer 2012 and 2013}
+      \resumeItemListStart
+        \resumeItem{Portfolio Management}
+          {Created models for portfolio hedging,  portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
+        \resumeItem{QuantDesk}
+          {Python backend for a web application used by hedge fund managers for portfolio management.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, CA}
+      {Research and Teaching Assistant}{Jan 2012 - Dec 2013}
+      \resumeItemListStart
+        \resumeItem{Research Assistant - Machine Learning}
+          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the python library QSTK.}
+        \resumeItem{Teaching Assistant - Computational Investing}
+          {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Clusters}
+      {Open source library for cluster analysis for Go levaraging language concurrency primitives.}
+    \resumeSubItem{PBF Parser}
+      {Parser and decoder for OpenStreetMap PBF format written in Elixir.}
+    \resumeSubItem{jMonitor}
+      {An implementation of Java event monitoring library described by Murat Karaorman and Jay Freeman.}
+    \resumeSubItem{CPGA}
+      {C++ framework for running and testing PGA models utlizing actor paradigm.}
+  \resumeSubHeadingListEnd
+
+\section{Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Java, C, C++, Python, Ruby, Erlang}
+      \hfill
+      \textbf{Technologies}{: Boost, Scikit Learn, Ruby on Rails}
+    }
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document} 
