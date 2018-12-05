@@ -31,14 +31,20 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemPlain}[1]{
+  \item\small{
+    #1 \vspace{-2pt}
   }
 }
 
@@ -57,7 +63,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -77,9 +83,9 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University College London}{London, UK}
-      {BSc Computer Science}{Sep. 2016 -- Jun. 2019}
+      {BSc Computer Science, GPA 3.80}{Sep. 2016 -- Jun. 2019}
       \resumeItemListStart
-        \resumeItem{Modules}
+        \resumeItem{Modules include}
           {Logic and Database Theory, Computer Architecture, Concurrency, Compilers, Object-Oriented Programming, Functional Programming, Engineering Mathematics in Finance, Stochastic Calculus and Uncertainty Analysis, Data Mining and Analysis}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -91,32 +97,28 @@
 
     \resumeSubheading
       {Duco}{London, UK}
-      {Software Engineer Intern}{Jul. 2018 - Oct. 2018}
+      {Software Engineer Intern}{Jun. 2018 - Nov. 2018}
       \resumeItemListStart
-        \resumeItem{Tensorflow}
-          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models.}
-        \resumeItem{Apache Beam}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+        \resumeItemPlain
+          {Developed dashboard component for specifying regual expressions used to detect certain values in tabular files (Vue, Jest, Ruby on Rails, Rspec).}
+        \resumeItemPlain
+          {Created Akka actors for search pattern compilation and performing the actual search. Tested and refactored them using JUnit tests (Java, Akka).}
+        \resumeItemPlain
+          {Developed a third-party integration to allow for workflow collaboration with external customers (Java, Ruby on Rails, Rspec).}
+        \resumeItemPlain
+          {Participated in development of internal secure file submission tool (React, Enzyme, Rails, Rspec).}
+        \resumeItemPlain
+          {Aided in identifying and fixing XXE vulnerabilities in XML processor.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Lucena Research}{Atlanta, GA}
-      {Data Scientist}{Summer 2012 and 2013}
+      {Okinet}{Warsaw, PL}
+      {Software Engineering Intern}{Jun. 2016 - Sep. 2016}
       \resumeItemListStart
-        \resumeItem{Portfolio Management}
-          {Created models for portfolio hedging,  portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
-        \resumeItem{QuantDesk}
-          {Python backend for a web application used by hedge fund managers for portfolio management.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, CA}
-      {Research and Teaching Assistant}{Jan 2012 - Dec 2013}
-      \resumeItemListStart
-        \resumeItem{Research Assistant - Machine Learning}
-          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the python library QSTK.}
-        \resumeItem{Teaching Assistant - Computational Investing}
-          {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
+        \resumeItemPlain
+          { Developed backend of a SEO analytics platform dedicated for tracking the position of a domain in Google search engine for given keywords over time. The project involved building a distributed master-slave architecture for periodic polling  of the search engine.}
+        \resumeItemPlain
+          {Refactored and tested Symfony services using PHPUnit framework.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -126,21 +128,27 @@
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{Clusters}
-      {Open source library for cluster analysis for Go levaraging language concurrency primitives.}
+      {Open source library for cluster analysis in Golang levaraging the language concurrency primitives.}
     \resumeSubItem{PBF Parser}
       {Parser and decoder for OpenStreetMap PBF format written in Elixir.}
+    \resumeSubItem{Flow Monitor}
+      {Elixir macro for measuring progress of stages in a Flow pipeline.}
     \resumeSubItem{jMonitor}
-      {An implementation of Java event monitoring library described by Murat Karaorman and Jay Freeman.}
+      {An open source library for monitoring legacy Java programs by injecting chunks bytecode into compiled classes. User can specify targets for monitoring using regular expressions.}
     \resumeSubItem{CPGA}
-      {C++ framework for running and testing PGA models utlizing actor paradigm.}
+      {C++ framework for running and testing parallel genetic algorithms executed as actor systems. Developed as part of final year thesis.}
   \resumeSubHeadingListEnd
 
 \section{Skills}
   \resumeSubHeadingListStart
-    \item{
-      \textbf{Languages}{: Java, C, C++, Python, Ruby, Erlang}
-      \hfill
-      \textbf{Technologies}{: Boost, Scikit Learn, Ruby on Rails}
+    \resumeSubItem{Languages}{
+      Java, C, C++, Python, Ruby, Erlang
+    }
+    \resumeSubItem{Frameworks}{
+      jUnit, Akka, Boost, Scikit Learn, Ruby on Rails
+    }
+    \resumeSubItem{Tools}{
+      Git, Jira, Eclipse, IntelliJ
     }
   \resumeSubHeadingListEnd
 
